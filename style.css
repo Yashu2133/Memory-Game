@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+ background: 
+  linear-gradient(145deg, #f8fe89, #66a6ff);
+}
+
+.container {
+  margin-bottom: 60px;
+}
+
+.gamecards {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap:30px;
+  justify-content: center;
+}
+
+.card {
+  width: 120px;
+  height: 110px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: lightgray;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+.btn{
+     padding: 0.6rem 1.5rem;
+     border-radius: 5px;
+}
+.btn:hover{
+    background-color: beige; 
+}
+
+
+/* MediaQuery */
+@media(max-width:425px){
+  .gamecards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 35px;
+  }
+ .container{
+  padding-left:35px;
+ }
+}
+
+@media(min-width:426px) and (max-width:560px){
+  .gamecards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
