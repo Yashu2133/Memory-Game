@@ -15,9 +15,9 @@
 ------------------------------------------------------------------------------
 
 ## TechStack 🛠️
- -HTML – for page structure.
- -CSS – for styling and animation.
- -JavaScript (DOM) – for interactivity and game logic.
+ **HTML – for page structure.
+ **CSS – for styling and animation.
+ **JavaScript (DOM) – for interactivity and game logic.
  --------------------------------------------------------------------------------
 
 ## How to Run 💻
