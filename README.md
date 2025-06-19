@@ -25,6 +25,6 @@ TechStack 🛠️
      Click and Open index.html in any modern browser.
 
  Live Demo 🔗
- 
+ https://memorygameflip.netlify.app/
 
 
